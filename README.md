@@ -1,6 +1,11 @@
 # application for use TPR framework 3.0
 
 
+## Env
+
+* php: 7.1+
+
+## How to use
 * install composer library
 ``` shell
 composer install -vvv
