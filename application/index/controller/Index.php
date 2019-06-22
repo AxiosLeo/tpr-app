@@ -17,4 +17,10 @@ class Index extends Controller
     {
         return "hello,world";
     }
+
+    public function test()
+    {
+        $this->setResponseType("json");
+        $this->response(["test"]);
+    }
 }

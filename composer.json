@@ -20,7 +20,8 @@
   },
   "require": {
     "php": ">=7.1",
-    "axios/tpr": "dev-master"
+    "axios/tpr": "dev-master",
+    "symfony/var-dumper": "^4.3"
   },
   "require-dev": {
   },
