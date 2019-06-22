@@ -20,13 +20,14 @@
   },
   "require": {
     "php": ">=7.1",
-    "axios/tpr": "dev-3.0-alpha"
+    "axios/tpr": "dev-master"
   },
   "require-dev": {
   },
   "autoload": {
     "psr-4": {
-      "library\\": "library/"
+      "library\\": "library/",
+      "App\\": "application/"
     },
     "files": [
     ]
