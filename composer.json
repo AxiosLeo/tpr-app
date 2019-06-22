@@ -1,0 +1,36 @@
+{
+  "name": "axios/tpr-framework",
+  "description": "design for api development",
+  "version": "3.0.0",
+  "keywords": [
+    "framework",
+    "ORM",
+    "Api"
+  ],
+  "homepage": "https://github.com/AxiosCros/tpr-framework",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "axios",
+      "email": "axioscros@aliyun.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/AxiosCros/tpr-framework/issues"
+  },
+  "require": {
+    "php": ">=7.1",
+    "axios/tpr": "dev-3.0-alpha"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "library\\": "library/"
+    },
+    "files": [
+    ]
+  },
+  "repositories": {
+  }
+}
