@@ -21,7 +21,8 @@
   "require": {
     "php": ">=7.1",
     "axios/tpr": "dev-master",
-    "symfony/var-dumper": "^4.3"
+    "symfony/var-dumper": "^4.3",
+    "nette/php-generator": "^3.2"
   },
   "require-dev": {
   },
@@ -34,5 +35,12 @@
     ]
   },
   "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  },
+  "scripts": {
+    "run":"cd public/ && php -S localhost:8088"
   }
 }
