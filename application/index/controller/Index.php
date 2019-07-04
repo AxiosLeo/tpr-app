@@ -1,13 +1,6 @@
 <?php
-/**
- * @author  : axios
- *
- * @email   : axiosleo@foxmail.com
- * @blog    : http://hanxv.cn
- * @datetime: 2019-03-19 16:24
- */
 
-namespace App\index\controller;
+namespace app\index\controller;
 
 use tpr\Controller;
 
@@ -22,5 +15,23 @@ class Index extends Controller
     {
         $this->setResponseType("json");
         $this->response(["test"]);
+    }
+
+    public function param($path_params)
+    {
+        $this->setResponseType("json");
+        $this->response($path_params);
+    }
+
+    public function page()
+    {
+        $this->assign("title", "hello, world!");
+        $this->assign("listItem", [
+            [
+                "value" => "/index/1/title",
+                "name"  => "LinkName"
+            ]
+        ]);
+        return $this->fetch("index/index:index");
     }
 }

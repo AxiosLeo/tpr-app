@@ -1,6 +1,6 @@
 <?php
 
-namespace command;
+namespace app\command;
 
 use Exception;
 use Nette\PhpGenerator\Parameter;

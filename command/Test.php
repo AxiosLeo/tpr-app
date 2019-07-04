@@ -1,6 +1,6 @@
 <?php
 
-namespace command;
+namespace app\command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -21,4 +21,3 @@ class Test extends Console
         $this->output->writeln("this is test command");
     }
 }
-

@@ -41,6 +41,6 @@
     }
   },
   "scripts": {
-    "run":"cd public/ && php -S localhost:8088"
+    "run": "cd public/ && php -S localhost:8088"
   }
 }
