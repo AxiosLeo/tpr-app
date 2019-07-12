@@ -22,7 +22,8 @@
     "php": ">=7.1",
     "axios/tpr": "dev-master",
     "symfony/var-dumper": "^4.3",
-    "nette/php-generator": "^3.2"
+    "nette/php-generator": "^3.2",
+    "axios/tpr-db": "^1.1"
   },
   "require-dev": {
   },

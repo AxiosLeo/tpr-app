@@ -12,7 +12,7 @@ use tpr\Console;
 use tpr\Files;
 use tpr\Path;
 
-class MakeCommand extends Console
+class Make extends Console
 {
     protected function configure()
     {
