@@ -20,20 +20,19 @@
   },
   "require": {
     "php": ">=7.1",
-    "axios/tpr": "dev-master",
     "symfony/var-dumper": "^4.3",
-    "nette/php-generator": "^3.2",
-    "axios/tpr-db": "^1.1"
+    "axios/tpr-db": "^1.1",
+    "axios/tpr": "^3.0"
   },
   "require-dev": {
+    "nette/php-generator": "^3.2"
   },
   "autoload": {
     "psr-4": {
       "library\\": "library/",
       "App\\": "application/"
     },
-    "files": [
-    ]
+    "files": []
   },
   "repositories": {
     "packagist": {
@@ -42,6 +41,6 @@
     }
   },
   "scripts": {
-    "run": "cd public/ && php -S localhost:8088"
+    "start": "cd public/ && php -S localhost:8088"
   }
 }
