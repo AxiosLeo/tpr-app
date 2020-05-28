@@ -20,19 +20,22 @@
   },
   "require": {
     "php": ">=7.1",
-    "symfony/var-dumper": "^4.3",
     "axios/tpr-db": "^1.1",
-    "axios/tpr": "^3.0"
+    "axios/tpr": "^3.1"
   },
   "require-dev": {
-    "nette/php-generator": "^3.2"
+    "symfony/var-dumper": "^4.3",
+    "nette/php-generator": "^3.2",
+    "friendsofphp/php-cs-fixer": "^2.16"
   },
   "autoload": {
     "psr-4": {
       "library\\": "library/",
-      "App\\": "application/"
+      "app\\": "application/"
     },
-    "files": []
+    "files": [
+      "library/helper.php"
+    ]
   },
   "repositories": {
     "packagist": {
@@ -41,6 +44,7 @@
     }
   },
   "scripts": {
-    "start": "cd public/ && php -S localhost:8088"
+    "run": "cd public/ && php -S localhost:8088",
+    "fix": "./vendor/bin/php-cs-fixer fix ./"
   }
 }
