@@ -44,7 +44,7 @@
     }
   },
   "scripts": {
-    "run": "echo 'http://localhost:8088' && php -S localhost:8088 -t public/",
+    "start": "echo 'http://localhost:8088' && php -S localhost:8088 -t public/",
     "fix": "./vendor/bin/php-cs-fixer fix ./"
   }
 }

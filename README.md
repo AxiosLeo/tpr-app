@@ -15,7 +15,7 @@ composer install
 * start web server
 
 ```bash
-composer run
+composer start
 ```
 
 > view in brower : [localhost:8088/index.php](http://localhost:8088/index.php)
