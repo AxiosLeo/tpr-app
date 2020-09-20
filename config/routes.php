@@ -1,13 +1,5 @@
 <?php
 
-/**
- * @see : https://github.com/nikic/FastRoute
- */
+// you can write routes data in here.
 return [
-    'route_name' => [
-        'rule'         => '/index/{id:\\d+}[/{title}]',
-        'method'       => 'GET',
-        'handler'      => 'App\\index\\controller\\Index::param',
-        'requirements' => [],
-    ],
 ];

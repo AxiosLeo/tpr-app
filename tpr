@@ -1,14 +1,20 @@
 #!/usr/bin/env php
 <?php
 
-namespace tpr;
+require_once __DIR__ . \DIRECTORY_SEPARATOR . 'vendor'. \DIRECTORY_SEPARATOR .'autoload.php';
 
-require_once __DIR__ . '/vendor/autoload.php';
+use tpr\Path;
+use tpr\App;
 
-Path::root(__DIR__ . \DIRECTORY_SEPARATOR);
-Path::vendor(Path::root() . 'vendor' . \DIRECTORY_SEPARATOR);
+Path::configurate([
+    'root'  => __DIR__ . \DIRECTORY_SEPARATOR,
+    'vendor'=> Path::join(Path::root(), 'vendor')
+]);
 
-App::debugMode(true);
-App::default()
-    ->setOption("namespace", "app\\command")
-    ->run();
+App::default()->config([
+    'server_options' => [
+        'commands' => [
+            'make' => \tpr\command\Make::class
+        ]
+    ]
+])->run();

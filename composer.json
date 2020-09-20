@@ -1,41 +1,12 @@
 {
-  "name": "axios/tpr-app",
-  "description": "design for api development",
-  "version": "3.0.0",
-  "keywords": [
-    "framework",
-    "ORM",
-    "Api"
-  ],
-  "homepage": "https://github.com/AxiosCros/tpr-app",
-  "license": "Apache-2.0",
-  "authors": [
-    {
-      "name": "axios",
-      "email": "axioscros@aliyun.com"
-    }
-  ],
-  "support": {
-    "issues": "https://github.com/AxiosCros/tpr-app/issues"
-  },
   "require": {
-    "php": ">=7.1",
-    "axios/tpr-db": "^1.1",
-    "axios/tpr": "^3.1"
-  },
-  "require-dev": {
-    "symfony/var-dumper": "^4.3",
-    "nette/php-generator": "^3.2",
-    "friendsofphp/php-cs-fixer": "^2.16"
+    "axios/tpr": "^5.0"
   },
   "autoload": {
     "psr-4": {
       "library\\": "library/",
       "app\\": "application/"
-    },
-    "files": [
-      "library/helper.php"
-    ]
+    }
   },
   "repositories": {
     "packagist": {
@@ -44,7 +15,7 @@
     }
   },
   "scripts": {
-    "start": "echo 'http://localhost:8088' && php -S localhost:8088 -t public/",
-    "fix": "./vendor/bin/php-cs-fixer fix ./"
+    "start": "echo 'http://localhost:8088' && php -S localhost:8088 -t public/"
   }
 }
+
