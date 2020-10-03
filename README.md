@@ -1,4 +1,8 @@
-# application for use TPR framework 3.0
+# application for use TPR framework 5.0
+
+## Framework
+
+- [github.com/AxiosCros/tpr](https://github.com/AxiosCros/tpr)
 
 ## Env
 
