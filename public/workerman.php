@@ -14,7 +14,6 @@ App::drive('workerman')
     ->config([
         'namespace'       => 'app',           // app base namespace, ### this is required ###
         'lang'            => 'zh-cn',         // default language set name
-        'cache_time'      => 60,              // global cache time for config&route data
         'force_route'     => false,           // forces use routing
         'remove_headers'  => [],              // remove some header before send response
         // for ServerHandler custom config.
