@@ -1,6 +1,7 @@
 {
   "require": {
-    "axios/tpr": "^5.0.1"
+    "axios/tpr": "^5.0.1",
+    "axios/tpr-workerman": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -18,6 +19,7 @@
     "start": "echo 'http://localhost:8088' && php -S localhost:8088 -t public/"
   },
   "require-dev": {
-    "nette/php-generator": "^3.4"
+    "nette/php-generator": "^3.4",
+    "symfony/var-dumper": "^5.1"
   }
 }

@@ -10,21 +10,29 @@
 
 ## How to use
 
-* install composer library
+### install composer library
 
 ```bash
 composer install
 ```
 
-* start web server
+### start web server
+
+- Use php built-in web server
 
 ```bash
-composer start
+php -S localhost:8088 -t public/
 ```
 
-> view in brower : [localhost:8088/index.php](http://localhost:8088/index.php)
+- Use workerman web server
 
-* use command tool
+```bash
+php public/workerman.php start
+```
+
+> view in the browser : [localhost:8088/](http://localhost:8088/)
+
+### use command tool
 
 ```shell
 chmod 755 ./tpr
