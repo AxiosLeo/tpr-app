@@ -12,6 +12,7 @@ Path::configurate([
 ]);
 
 App::default()->config([
+    'namespace'      => 'app\commands',
     'server_options' => [
         'commands' => [
             'make' => \tpr\command\Make::class
