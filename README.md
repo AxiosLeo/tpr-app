@@ -1,4 +1,4 @@
-# application for use TPR framework 5.0
+# application for use TPR framework
 
 ## Framework
 
@@ -6,7 +6,7 @@
 
 ## Env
 
-* php: 7.4+
+- PHP 8.1+
 
 ## How to use
 
